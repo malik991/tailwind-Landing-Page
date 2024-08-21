@@ -8,7 +8,7 @@ import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
 
 export default function FeaturesPlanet() {
   return (
-    <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
+    <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-[#C80036]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -75,7 +75,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -93,7 +93,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -111,7 +111,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -133,7 +133,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -151,7 +151,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -169,7 +169,7 @@ export default function FeaturesPlanet() {
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-red-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}

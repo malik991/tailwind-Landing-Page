@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Logo from "./logo";
+import Image from "next/image";
+import myLogo from "../../public/images/my_logo.png";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -12,10 +13,18 @@ export default function Footer({ border = false }: { border?: boolean }) {
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             <div>
-              <Logo />
+              <Link href="/">
+                <Image
+                  src={myLogo}
+                  alt="alrehman ai logo"
+                  width={50}
+                  height={50}
+                />
+              </Link>
+              {/* <Logo /> */}
             </div>
             <div className="text-sm text-gray-600">
-              &copy; Cruip.com - All rights reserved.
+              &copy; AL-Rehman AI Solutions - All rights reserved.
             </div>
           </div>
 
@@ -150,9 +159,10 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <ul className="flex gap-1">
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
+                  className="flex items-center justify-center text-red-500 transition hover:text-blue-600"
+                  href="https://twitter.com/malik9914"
                   aria-label="Twitter"
+                  target="_blank"
                 >
                   <svg
                     className="h-8 w-8 fill-current"
@@ -165,8 +175,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
+                  className="flex items-center justify-center text-red-500 transition hover:text-blue-600"
+                  href="https://alrehmanai.netlify.app/"
+                  target="_blank"
                   aria-label="Medium"
                 >
                   <svg
@@ -180,9 +191,10 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
+                  className="flex items-center justify-center text-red-500 transition hover:text-blue-600"
+                  href="https://github.com/malik991"
                   aria-label="Github"
+                  target="_blank"
                 >
                   <svg
                     className="h-8 w-8 fill-current"
@@ -190,6 +202,22 @@ export default function Footer({ border = false }: { border?: boolean }) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z"></path>
+                  </svg>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="flex items-center justify-center text-red-500 transition hover:text-blue-600"
+                  href="https://www.linkedin.com/in/mubashar-hassan-sci/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
+                  <svg
+                    className="h-5 w-5 mt-1 fill-current"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 12h5v2.8h.1c.7-1.3 2.5-2.7 5.2-2.7 5.6 0 6.6 3.7 6.6 8.6v9.9h-5v-8.8c0-2.1-.1-4.9-3-4.9s-3.4 2.3-3.4 4.7v9h-5v-20.6zM2 12h5v20.6h-5v-20.6zM7.5 4a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
                   </svg>
                 </Link>
               </li>

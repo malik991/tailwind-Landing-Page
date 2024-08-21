@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Logo from "@/components/ui/logo";
 import AuthBg from "@/public/images/auth-bg.svg";
+import myLogo from "../../public/images/my_logo.png";
+import Link from "next/link";
 
 export default function AuthLayout({
   children,
@@ -14,7 +15,15 @@ export default function AuthLayout({
           <div className="flex h-16 items-center justify-between md:h-20">
             {/* Site branding */}
             <div className="mr-4 shrink-0">
-              <Logo />
+              <Link href="/">
+                <Image
+                  src={myLogo}
+                  alt="alrehman ai logo"
+                  width={50}
+                  height={50}
+                />
+              </Link>
+              {/* <Logo /> */}
             </div>
           </div>
         </div>
@@ -60,7 +69,7 @@ export default function AuthLayout({
               <div className="aspect-video w-full rounded-2xl bg-gray-900 px-5 py-3 shadow-xl transition duration-300">
                 <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_theme(colors.gray.600)_4.5px,_transparent_0)] after:w-[41px]">
                   <span className="text-[13px] font-medium text-white">
-                    cruip.com
+                    landtaxshare.com
                   </span>
                 </div>
                 <div className="font-mono text-sm text-gray-500 transition duration-300 [&_span]:opacity-0">
